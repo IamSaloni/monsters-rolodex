@@ -21,13 +21,7 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <CardList name="yihua">
-        {this.state.monsters.map((monster, id) => {
-          return <h1 key={monster.id}>{monster.name}</h1>;
-        })}
-      </CardList>
-    );
+    return <CardList monsters={this.state.monsters} />;
   }
 }
 
